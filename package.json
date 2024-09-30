@@ -1,5 +1,6 @@
 {
   "name": "react-project",
+  "homepage": "https://<your-username>.github.io/<your-repo-name>",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +12,9 @@
     "install-dep": "npm i --no-bin-links",
     "build": "webpack",
     "build-prod": "webpack --mode production",
-    "start": "webpack serve --hot --mode development"
+    "start": "webpack serve --hot --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^17.0.2",
